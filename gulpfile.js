@@ -10,6 +10,8 @@ gulp.task('wiredep', function() {
     return gulp
         .src(config.index)
         .pipe(wiredep(options))
+        /**
         .pipe($.inject(gulp.src(config.js)))
+        **/
         .pipe(gulp.dest(config.client));
 });

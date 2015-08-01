@@ -7,6 +7,7 @@ module.exports = function() {
             directory: './bower_components',
             ignorePath: '../..'
         },
+        client: client,
         index: client + 'index.html',
         js: [
           clientApp + '**/*.module.js',
@@ -20,4 +21,5 @@ module.exports = function() {
             ignorePath: config.bower.ignorePath
         };
     };
+    return config;
 };
