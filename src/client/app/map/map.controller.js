@@ -3,57 +3,33 @@
 
     angular
         .module('app.map')
-.controller('Map', function($scope) {
-    
-})
+        .controller('Map', function($scope) {
+            
+        })
 
-.directive('scChoroplethWorldMap', function() {
+        .directive('scChoroplethWorldMap', function() {
 
-    function link(scope, element, attrs) {
-      element[0].style.position = 'relative';
-      element[0].style.display = 'block';
+            function link(scope, element, attrs) {
+              element[0].style.position = 'relative';
+              element[0].style.display = 'block';
 
-      var choropleth = new Datamap({
-        element: element[0],
-        width: 500,
-        height: 300,
-        projection: 'mercator',
-        fills: {
-          defaultFill: "#ABDDA4",
-          authorHasTraveledTo: "#fa0fa0"
-        },
-        data: {
-          USA: {
-            fillKey: "authorHasTraveledTo"
-          },
-          JPN: {
-            fillKey: "authorHasTraveledTo"
-          },
-          ITA: {
-            fillKey: "authorHasTraveledTo"
-          },
-          CRI: {
-            fillKey: "authorHasTraveledTo"
-          },
-          KOR: {
-            fillKey: "authorHasTraveledTo"
-          },
-          DEU: {
-            fillKey: "authorHasTraveledTo"
-          },
-        }
-      });
+              var choropleth = new Datamap({
+                element: element[0],
+                width: 500,
+                height: 300,
+                projection: 'mercator',
+              });
 
-    }
+            }
 
-    return {
-      restrict: 'E',
-      link: link,
-      scope: {
-        data: '&'
-      }
-    };
+            return {
+              restrict: 'E',
+              link: link,
+              scope: {
+                data: '&'
+              }
+            };
 
-  });
+          });
 
 })();
