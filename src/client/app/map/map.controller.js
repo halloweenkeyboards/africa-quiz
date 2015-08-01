@@ -40,7 +40,9 @@
               }
             });
             choropleth.bubbles([
-                {name: 'seychelles', latitude: -4.37 , longitude: 55.27, radius: 20, fillKey: 'pink'}
+                {name: 'seychelles', latitude: -4.37 , longitude: 55.27, radius: 20, fillKey: 'pink'},
+                {name: 'mauritius', latitude: -20.16 , longitude: 57.52, radius: 20, fillKey: 'pink'},
+                {name: 'sao tome and principe', latitude: 0.33 , longitude: 6.73, radius: 20, fillKey: 'pink'}
             ], {});
             }
 
