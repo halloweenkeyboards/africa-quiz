@@ -15,6 +15,14 @@ gulp.task('wiredep', function() {
         .pipe(gulp.dest(config.client));
 });
 
+gulp.task('inject', ['wiredep', 'styles'], function() {
+    return gulp
+      .src(config.index)
+      .pipe($.inject(gulp.src(config.css)))
+      .pipe($.replace(/="..\/..\/bower_components\//g, '="/bower_components/'))
+      .pipe(gulp.dest(config.client));
+});
+
 gulp.task('clean-styles', function(done) {
     var files = config.temp + '**/*.css';
     clean(files, done);

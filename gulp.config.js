@@ -9,6 +9,7 @@ module.exports = function() {
             ignorePath: '../..'
         },
         client: client,
+        css: temp + 'style.css',
         index: client + 'index.html',
         js: [
           clientApp + '**/*.module.js',
