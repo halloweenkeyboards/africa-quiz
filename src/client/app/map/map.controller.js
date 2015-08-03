@@ -19,7 +19,9 @@
                 height: 500,
                 scope: 'world',
                 geographyConfig: {                 
-                    borderColor: '#000000'
+                    borderColor: '#000000',
+                    highlightOnHover: false,
+                    popupOnHover: false
                 },
                 // Zoom in on Africa
                 setProjection: function(element) {
