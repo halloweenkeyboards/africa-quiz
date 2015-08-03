@@ -12,10 +12,11 @@
         <title>can you guess all the countries of Africa?</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container" ng-controller="Map">
             <h1>famous nations of Africa quiz</h2>
+            <button ng-click="correctGuess('TUN')">guess 'Tunisia'</button>
             <div class="row">
-                <div ng-controller="Map">
+                <div>
                     <sc-choropleth-world-map></sc-choropleth-world-map>
                 </div>
             </div>

@@ -10,9 +10,8 @@
         element[0].style.position = 'relative';
         element[0].style.display = 'block';
 
-        console.log(scope.scopeMessage);
 
-      var choropleth = new Datamap({
+      scope.choropleth = new Datamap({
           element: element[0],
           width: element[0].width,
           height: 550,
@@ -38,12 +37,9 @@
           defaultFill: "#ABDDA4",
           pink: '#0fa0fa'
         },
-        data: {
-          'SSD': { fillKey: 'pink' },
-          'CIV': { fillKey: 'pink' }
-        }
+        data: scope.mapData
       });
-      choropleth.bubbles([
+      scope.choropleth.bubbles([
           {name: 'seychelles', latitude: -4.37 , longitude: 55.27, radius: 10, fillKey: 'pink'},
           {name: 'mauritius', latitude: -20.16 , longitude: 57.52, radius: 10, fillKey: 'pink'},
           {name: 'sao tome and principe', latitude: 0.33 , longitude: 6.73, radius: 10, fillKey: 'pink'}
