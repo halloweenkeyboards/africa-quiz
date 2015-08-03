@@ -15,8 +15,8 @@
 
             var choropleth = new Datamap({
                 element: element[0],
-                width: window.width,
-                height: 500,
+                width: element[0].width,
+                height: 550,
                 scope: 'world',
                 geographyConfig: {                 
                     borderColor: '#000000',
@@ -28,7 +28,7 @@
                   var projection = d3.geo.equirectangular()
                     .center([23, 0])
                     .rotate([4.4, -3])
-                    .scale(300)
+                    .scale(400)
                     .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
                   var path = d3.geo.path()
                     .projection(projection);
