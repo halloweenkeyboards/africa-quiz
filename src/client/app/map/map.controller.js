@@ -62,7 +62,8 @@
           'UGA': { fillKey: 'unGuessed' },
           'ZAF': { fillKey: 'unGuessed' },
           'ZMB': { fillKey: 'unGuessed' },
-          'ZWE': { fillKey: 'unGuessed' }
+          'ZWE': { fillKey: 'unGuessed' },
+          '-99': { fillKey: 'unGuessed' }          
         }
 
       $scope.correctGuess = function(countryCode) {

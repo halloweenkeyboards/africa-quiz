@@ -10,7 +10,6 @@
         element[0].style.position = 'relative';
         element[0].style.display = 'block';
 
-
       scope.choropleth = new Datamap({
           element: element[0],
           width: element[0].width,
