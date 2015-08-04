@@ -17,7 +17,7 @@
           height: 550,
           scope: 'world',
           geographyConfig: {                 
-              borderColor: '#000000',
+              borderColor: '#e8caa4',
               highlightOnHover: false,
               popupOnHover: false
           },
@@ -34,15 +34,16 @@
             return {path: path, projection: projection};
           },
         fills: {
-          defaultFill: "#ABDDA4",
-          pink: '#0fa0fa'
+          defaultFill: "#424254",
+          unGuessed: '#64908a',
+          guessed: '#cc2a41'
         },
         data: scope.mapData
       });
       scope.choropleth.bubbles([
-          {name: 'seychelles', latitude: -4.37 , longitude: 55.27, radius: 10, fillKey: 'pink'},
-          {name: 'mauritius', latitude: -20.16 , longitude: 57.52, radius: 10, fillKey: 'pink'},
-          {name: 'sao tome and principe', latitude: 0.33 , longitude: 6.73, radius: 10, fillKey: 'pink'}
+          {name: 'seychelles', latitude: -4.37 , longitude: 55.27, radius: 10, fillKey: 'guessed'},
+          {name: 'mauritius', latitude: -20.16 , longitude: 57.52, radius: 10, fillKey: 'guessed'},
+          {name: 'sao tome and principe', latitude: 0.33 , longitude: 6.73, radius: 10, fillKey: 'guessed'}
       ], {
           highlightOnHover: false,
           popupOnHover: false 
