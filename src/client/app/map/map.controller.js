@@ -66,11 +66,11 @@
           '-99': { fillKey: 'unGuessed' }          
         };
       $scope.islandNations = [  
-          {name: 'seychelles', latitude: -4.37 , longitude: 55.27, radius: 10, fillKey: 'guessed'},
-          {name: 'mauritius', latitude: -20.16 , longitude: 57.52, radius: 10, fillKey: 'guessed'},
-          {name: 'sao tome and principe', latitude: 0.33 , longitude: 6.73, radius: 10, fillKey: 'guessed'},
-          {name: 'cape verde', latitude: 14.91, longitude: -23.5, radius: 10, fillKey: 'guessed'},
-          {name: 'comoros', latitude: -11.68 , longitude: 43.26, radius: 10, fillKey: 'guessed'}
+          {name: 'seychelles', latitude: -4.37 , longitude: 55.27, radius: 10, fillKey: 'unGuessed'},
+          {name: 'mauritius', latitude: -20.16 , longitude: 57.52, radius: 10, fillKey: 'unGuessed'},
+          {name: 'sao tome and principe', latitude: 0.33 , longitude: 6.73, radius: 10, fillKey: 'unGuessed'},
+          {name: 'cape verde', latitude: 14.91, longitude: -23.5, radius: 10, fillKey: 'unGuessed'},
+          {name: 'comoros', latitude: -11.68 , longitude: 43.26, radius: 10, fillKey: 'unGuessed'}
       ];
 
       $scope.correctGuess = function(countryCode) {
