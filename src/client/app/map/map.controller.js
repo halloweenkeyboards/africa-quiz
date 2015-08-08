@@ -42,7 +42,7 @@
           'MDG': { fillKey: 'unGuessed' },
           'MLI': { fillKey: 'unGuessed' },
           'MOZ': { fillKey: 'unGuessed' },
-          'MRT': { fillKey: 'unGuessed' },
+          'MRT': { fillKey: 'guessed' },
           'MUS': { fillKey: 'unGuessed' },
           'MWI': { fillKey: 'unGuessed' },
           'NAM': { fillKey: 'unGuessed' },
