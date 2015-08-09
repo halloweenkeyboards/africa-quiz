@@ -74,7 +74,7 @@
       ];
 
       $scope.correctGuess = function(countryCode) {
-        $scope.mapData[countryCode] = {fillKey: 'pink'};
+        $scope.mapData[countryCode] = {fillKey: 'guessed'};
         //console.log($scope.choropleth.options.data);
         //$scope.choropleth.resize();
       };
