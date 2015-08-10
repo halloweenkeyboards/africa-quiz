@@ -20,6 +20,7 @@
     "gulp-load-plugins": "^0.10.0",
     "gulp-plumber": "^1.0.1",
     "gulp-replace": "^0.5.3",
+    "gulp-task-listing": "^1.0.1",
     "gulp-util": "^3.0.6",
     "wiredep": "^2.2.2"
   }

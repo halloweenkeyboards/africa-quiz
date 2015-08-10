@@ -4,6 +4,9 @@ var del = require('del');
 
 var config = require('./gulp.config')();
 
+gulp.task('help', $.taskListing);
+gulp.task('default', ['help']);
+
 gulp.task('wiredep', function() {
     var options = config.getWiredepOptions();
     var wiredep = require('wiredep').stream;
