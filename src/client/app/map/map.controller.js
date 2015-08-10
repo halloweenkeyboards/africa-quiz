@@ -8,8 +8,6 @@
     Map.$inject = ['$scope'];
 
     function Map($scope) {
-      $scope.scopeMessage = "twistd transist";
-
       $scope.mapData = {
           'AGO': { fillKey: 'unGuessed' },
           'BDI': { fillKey: 'unGuessed' },
@@ -83,9 +81,80 @@
       $scope.checkGuess = function() {
         //console.log('howdy');
         var correctGuess = false;
-        if ($scope.userGuessValue === 'tunisia') {
+        if ($scope.userGuessValue === 'angola') {
           correctGuess = true;
-          var correctGuessCountryCode = 'TUN';
+          var correctGuessCountryCode = 'AGO';
+        } else if ($scope.userGuessValue === 'burundi') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'BDI';
+        } else if ($scope.userGuessValue === 'benin') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'BEN';
+        } else if ($scope.userGuessValue === 'burkina faso') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'BFA';
+        } else if ($scope.userGuessValue === 'bahrain') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'BHA';
+        } else if ($scope.userGuessValue === 'botswana') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'BWA';
+        } else if ($scope.userGuessValue === 'central african republic') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'CAF';
+        } else if ($scope.userGuessValue === 'ivory coast' ||
+            $scope.userGuessValue === "cote d'ivoire") {
+          correctGuess = true;
+          var correctGuessCountryCode = 'CIV';
+        } else if ($scope.userGuessValue === 'cameroon') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'CMR';
+        } else if ($scope.userGuessValue === 'democratic republic of congo' || 
+            $scope.userGuessValue === 'the democratic republic of congo' ||
+            $scope.userGuessValue === 'the democratic republic of the congo' ||
+            $scope.userGuessValue === 'democratic republic of the congo') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'COD';
+        } else if ($scope.userGuessValue === 'congo') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'COG';
+        } else if ($scope.userGuessValue === 'djibouti') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'DJI';
+        } else if ($scope.userGuessValue === 'algeria') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'DZA';
+        } else if ($scope.userGuessValue === 'egypt') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'EGY';
+        } else if ($scope.userGuessValue === 'eritrea') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'ERI';
+        } else if ($scope.userGuessValue === 'sahara' ||
+            $scope.userGuessValue === 'western sahara' ||
+            $scope.userGuessValue === 'west sahara') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'ESH';
+        } else if ($scope.userGuessValue === 'ethiopia') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'ETH';
+        } else if ($scope.userGuessValue === 'gabon') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'GAB';
+        } else if ($scope.userGuessValue === 'ghana') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'GHA';
+        } else if ($scope.userGuessValue === 'guinea') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'GIN';
+        } else if ($scope.userGuessValue === 'gambia' ||
+            $scope.userGuessValue === 'the gambia') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'GMB';
+        } else if ($scope.userGuessValue === 'guinea-bissau' ||
+            $scope.userGuessValue === 'guinea bissau') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'GNB';
         }
 
 
