@@ -186,9 +186,6 @@
         } else if ($scope.userGuessValue === 'mauritania') {
           correctGuess = true;
           var correctGuessCountryCode = 'MRT';
-        } else if ($scope.userGuessValue === 'mauritius') {
-          correctGuess = true;
-          var correctGuessCountryCode = 'MUS';
         } else if ($scope.userGuessValue === 'malawi') {
           correctGuess = true;
           var correctGuessCountryCode = 'MWI';
