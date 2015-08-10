@@ -26,6 +26,16 @@ gulp.task('inject', ['wiredep', 'styles'], function() {
       .pipe(gulp.dest(config.client));
 });
 
+gulp.task('vet', function() {
+    log('vetting js now');
+    return gulp
+        .src(config.alljs)
+        .pipe($.jscs())
+        .pipe($.jshint())
+        .pipe($.jshint.reporter('jshint-stylish', {verbose:true}))
+        .pipe($.jshint.reporter('fail'));
+});
+
 gulp.task('clean-styles', function(done) {
     var files = config.temp + '**/*.css';
     clean(files, done);

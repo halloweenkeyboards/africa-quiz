@@ -3,6 +3,10 @@ module.exports = function() {
     var clientApp = client + 'app/';
     var temp = './.tmp/';
     var config = {
+        alljs: [
+          './src/**/*.js',
+          './*.js'
+        ],
         bower: {
             json: require('./bower.json'),
             directory: './bower_components',
