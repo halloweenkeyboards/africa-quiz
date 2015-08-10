@@ -81,169 +81,170 @@
 
       $scope.checkGuess = function() {
         //console.log('howdy');
+        var userGuessValueFixed = $scope.userGuessValue.toLowerCase();
         var correctGuess = false;
-        if ($scope.userGuessValue === 'angola') {
+        if (userGuessValueFixed === 'angola') {
           correctGuess = true;
           var correctGuessCountryCode = 'AGO';
-        } else if ($scope.userGuessValue === 'burundi') {
+        } else if (userGuessValueFixed === 'burundi') {
           correctGuess = true;
           var correctGuessCountryCode = 'BDI';
-        } else if ($scope.userGuessValue === 'benin') {
+        } else if (userGuessValueFixed === 'benin') {
           correctGuess = true;
           var correctGuessCountryCode = 'BEN';
-        } else if ($scope.userGuessValue === 'burkina faso') {
+        } else if (userGuessValueFixed === 'burkina faso') {
           correctGuess = true;
           var correctGuessCountryCode = 'BFA';
-        } else if ($scope.userGuessValue === 'bahrain') {
+        } else if (userGuessValueFixed === 'bahrain') {
           correctGuess = true;
           var correctGuessCountryCode = 'BHA';
-        } else if ($scope.userGuessValue === 'botswana') {
+        } else if (userGuessValueFixed === 'botswana') {
           correctGuess = true;
           var correctGuessCountryCode = 'BWA';
-        } else if ($scope.userGuessValue === 'central african republic') {
+        } else if (userGuessValueFixed === 'central african republic') {
           correctGuess = true;
           var correctGuessCountryCode = 'CAF';
-        } else if ($scope.userGuessValue === 'ivory coast' ||
-            $scope.userGuessValue === "cote d'ivoire") {
+        } else if (userGuessValueFixed === 'ivory coast' ||
+            userGuessValueFixed === "cote d'ivoire") {
           correctGuess = true;
           var correctGuessCountryCode = 'CIV';
-        } else if ($scope.userGuessValue === 'cameroon') {
+        } else if (userGuessValueFixed === 'cameroon') {
           correctGuess = true;
           var correctGuessCountryCode = 'CMR';
-        } else if ($scope.userGuessValue === 'democratic republic of congo' || 
-            $scope.userGuessValue === 'the democratic republic of congo' ||
-            $scope.userGuessValue === 'the democratic republic of the congo' ||
-            $scope.userGuessValue === 'democratic republic of the congo') {
+        } else if (userGuessValueFixed === 'democratic republic of congo' || 
+            userGuessValueFixed === 'the democratic republic of congo' ||
+            userGuessValueFixed === 'the democratic republic of the congo' ||
+            userGuessValueFixed === 'democratic republic of the congo') {
           correctGuess = true;
           var correctGuessCountryCode = 'COD';
-        } else if ($scope.userGuessValue === 'congo') {
+        } else if (userGuessValueFixed === 'congo') {
           correctGuess = true;
           var correctGuessCountryCode = 'COG';
-        } else if ($scope.userGuessValue === 'djibouti') {
+        } else if (userGuessValueFixed === 'djibouti') {
           correctGuess = true;
           var correctGuessCountryCode = 'DJI';
-        } else if ($scope.userGuessValue === 'algeria') {
+        } else if (userGuessValueFixed === 'algeria') {
           correctGuess = true;
           var correctGuessCountryCode = 'DZA';
-        } else if ($scope.userGuessValue === 'egypt') {
+        } else if (userGuessValueFixed === 'egypt') {
           correctGuess = true;
           var correctGuessCountryCode = 'EGY';
-        } else if ($scope.userGuessValue === 'eritrea') {
+        } else if (userGuessValueFixed === 'eritrea') {
           correctGuess = true;
           var correctGuessCountryCode = 'ERI';
-        } else if ($scope.userGuessValue === 'sahara' ||
-            $scope.userGuessValue === 'western sahara' ||
-            $scope.userGuessValue === 'west sahara') {
+        } else if (userGuessValueFixed === 'sahara' ||
+            userGuessValueFixed === 'western sahara' ||
+            userGuessValueFixed === 'west sahara') {
           correctGuess = true;
           var correctGuessCountryCode = 'ESH';
-        } else if ($scope.userGuessValue === 'ethiopia') {
+        } else if (userGuessValueFixed === 'ethiopia') {
           correctGuess = true;
           var correctGuessCountryCode = 'ETH';
-        } else if ($scope.userGuessValue === 'gabon') {
+        } else if (userGuessValueFixed === 'gabon') {
           correctGuess = true;
           var correctGuessCountryCode = 'GAB';
-        } else if ($scope.userGuessValue === 'ghana') {
+        } else if (userGuessValueFixed === 'ghana') {
           correctGuess = true;
           var correctGuessCountryCode = 'GHA';
-        } else if ($scope.userGuessValue === 'guinea') {
+        } else if (userGuessValueFixed === 'guinea') {
           correctGuess = true;
           var correctGuessCountryCode = 'GIN';
-        } else if ($scope.userGuessValue === 'gambia' ||
-            $scope.userGuessValue === 'the gambia') {
+        } else if (userGuessValueFixed === 'gambia' ||
+            userGuessValueFixed === 'the gambia') {
           correctGuess = true;
           var correctGuessCountryCode = 'GMB';
-        } else if ($scope.userGuessValue === 'guinea-bissau' ||
-            $scope.userGuessValue === 'guinea bissau') {
+        } else if (userGuessValueFixed === 'guinea-bissau' ||
+            userGuessValueFixed === 'guinea bissau') {
           correctGuess = true;
           var correctGuessCountryCode = 'GNB';
-        } else if ($scope.userGuessValue === 'equatorial guinea') {
+        } else if (userGuessValueFixed === 'equatorial guinea') {
           correctGuess = true;
           var correctGuessCountryCode = 'GNQ';
-        } else if ($scope.userGuessValue === 'kenya') {
+        } else if (userGuessValueFixed === 'kenya') {
           correctGuess = true;
           var correctGuessCountryCode = 'KEN';
-        } else if ($scope.userGuessValue === 'liberia') {
+        } else if (userGuessValueFixed === 'liberia') {
           correctGuess = true;
           var correctGuessCountryCode = 'LBR';
-        } else if ($scope.userGuessValue === 'libya') {
+        } else if (userGuessValueFixed === 'libya') {
           correctGuess = true;
           var correctGuessCountryCode = 'LBY';
-        } else if ($scope.userGuessValue === 'lesotho') {
+        } else if (userGuessValueFixed === 'lesotho') {
           correctGuess = true;
           var correctGuessCountryCode = 'LSO';
-        } else if ($scope.userGuessValue === 'morocco') {
+        } else if (userGuessValueFixed === 'morocco') {
           correctGuess = true;
           var correctGuessCountryCode = 'MAR';
-        } else if ($scope.userGuessValue === 'madagascar') {
+        } else if (userGuessValueFixed === 'madagascar') {
           correctGuess = true;
           var correctGuessCountryCode = 'MDG';
-        } else if ($scope.userGuessValue === 'mali') {
+        } else if (userGuessValueFixed === 'mali') {
           correctGuess = true;
           var correctGuessCountryCode = 'MLI';
-        } else if ($scope.userGuessValue === 'mozambique') {
+        } else if (userGuessValueFixed === 'mozambique') {
           correctGuess = true;
           var correctGuessCountryCode = 'MOZ';
-        } else if ($scope.userGuessValue === 'mauritania') {
+        } else if (userGuessValueFixed === 'mauritania') {
           correctGuess = true;
           var correctGuessCountryCode = 'MRT';
-        } else if ($scope.userGuessValue === 'malawi') {
+        } else if (userGuessValueFixed === 'malawi') {
           correctGuess = true;
           var correctGuessCountryCode = 'MWI';
-        } else if ($scope.userGuessValue === 'namibia') {
+        } else if (userGuessValueFixed === 'namibia') {
           correctGuess = true;
           var correctGuessCountryCode = 'NAM';
-        } else if ($scope.userGuessValue === 'niger') {
+        } else if (userGuessValueFixed === 'niger') {
           correctGuess = true;
           var correctGuessCountryCode = 'NER';
-        } else if ($scope.userGuessValue === 'nigeria') {
+        } else if (userGuessValueFixed === 'nigeria') {
           correctGuess = true;
           var correctGuessCountryCode = 'NGA';
-        } else if ($scope.userGuessValue === 'rwanda') {
+        } else if (userGuessValueFixed === 'rwanda') {
           correctGuess = true;
           var correctGuessCountryCode = 'RWA';
-        } else if ($scope.userGuessValue === 'sudan') {
+        } else if (userGuessValueFixed === 'sudan') {
           correctGuess = true;
           var correctGuessCountryCode = 'SDN';
-        } else if ($scope.userGuessValue === 'senegal') {
+        } else if (userGuessValueFixed === 'senegal') {
           correctGuess = true;
           var correctGuessCountryCode = 'SEN';
-        } else if ($scope.userGuessValue === 'sierra leone') {
+        } else if (userGuessValueFixed === 'sierra leone') {
           correctGuess = true;
           var correctGuessCountryCode = 'SLE';
-        } else if ($scope.userGuessValue === 'somalia') {
+        } else if (userGuessValueFixed === 'somalia') {
           correctGuess = true;
           var correctGuessCountryCode = 'SOM';
-        } else if ($scope.userGuessValue === 'south sudan') {
+        } else if (userGuessValueFixed === 'south sudan') {
           correctGuess = true;
           var correctGuessCountryCode = 'SSD';
-        } else if ($scope.userGuessValue === 'swaziland') {
+        } else if (userGuessValueFixed === 'swaziland') {
           correctGuess = true;
           var correctGuessCountryCode = 'SWZ';
-        } else if ($scope.userGuessValue === 'chad') {
+        } else if (userGuessValueFixed === 'chad') {
           correctGuess = true;
           var correctGuessCountryCode = 'TCD';
-        } else if ($scope.userGuessValue === 'togo') {
+        } else if (userGuessValueFixed === 'togo') {
           correctGuess = true;
           var correctGuessCountryCode = 'TGO';
-        } else if ($scope.userGuessValue === 'tunisia') {
+        } else if (userGuessValueFixed === 'tunisia') {
           correctGuess = true;
           var correctGuessCountryCode = 'TUN';
-        } else if ($scope.userGuessValue === 'tanzania') {
+        } else if (userGuessValueFixed === 'tanzania') {
           correctGuess = true;
           var correctGuessCountryCode = 'TZA';
-        } else if ($scope.userGuessValue === 'uganda') {
+        } else if (userGuessValueFixed === 'uganda') {
           correctGuess = true;
           var correctGuessCountryCode = 'UGA';
-        } else if ($scope.userGuessValue === 'south africa') {
+        } else if (userGuessValueFixed === 'south africa') {
           correctGuess = true;
           var correctGuessCountryCode = 'ZAF';
-        } else if ($scope.userGuessValue === 'zambia') {
+        } else if (userGuessValueFixed === 'zambia') {
           correctGuess = true;
           var correctGuessCountryCode = 'ZMB';
-        } else if ($scope.userGuessValue === 'zimbabwe') {
+        } else if (userGuessValueFixed === 'zimbabwe') {
           correctGuess = true;
           var correctGuessCountryCode = 'ZWE';
-        } else if ($scope.userGuessValue === 'somaliland') {
+        } else if (userGuessValueFixed === 'somaliland') {
           correctGuess = true;
           var correctGuessCountryCode = '-99';
         }
