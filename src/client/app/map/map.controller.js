@@ -72,6 +72,7 @@
       ];
 
       $scope.userGuessValue = '';
+      $scope.correctAnswers = [];
       $scope.$watch('userGuessValue', function() {
         if ($scope.userGuessValue.length > 0) {
           $scope.checkGuess();
@@ -158,12 +159,14 @@
         }
 
 
-        if (correctGuess) {
-          var updateObj = {};
-          updateObj[correctGuessCountryCode] = { fillKey: 'guessed' };
+        if (correctGuess && !_.find($scope.correctAnswers, function(country) { return country === correctGuessCountryCode })) {
+            $scope.correctAnswers.push(correctGuessCountryCode);
 
-          $scope.choropleth.updateChoropleth(updateObj);
-          $scope.userGuessValue = '';          
+            var updateObj = {};
+            updateObj[correctGuessCountryCode] = { fillKey: 'guessed' };
+
+            $scope.choropleth.updateChoropleth(updateObj);
+            $scope.userGuessValue = '';
         }
       };
     }
