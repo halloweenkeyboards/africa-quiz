@@ -14,7 +14,7 @@
     <body>
         <div class="container" ng-controller="Map">
             <h1>famous nations of Africa quiz</h1>
-            <button ng-click="correctGuess('TUN')">guess 'Tunisia'</button>
+            <input type="text" ng-model="userGuessValue" />
             <div class="row">
                 <div>
                     <sc-choropleth-world-map></sc-choropleth-world-map>

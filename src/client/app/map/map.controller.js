@@ -42,7 +42,7 @@
           'MDG': { fillKey: 'unGuessed' },
           'MLI': { fillKey: 'unGuessed' },
           'MOZ': { fillKey: 'unGuessed' },
-          'MRT': { fillKey: 'guessed' },
+          'MRT': { fillKey: 'unGuessed' },
           'MUS': { fillKey: 'unGuessed' },
           'MWI': { fillKey: 'unGuessed' },
           'NAM': { fillKey: 'unGuessed' },
@@ -73,12 +73,30 @@
           {name: 'comoros', latitude: -11.68 , longitude: 43.26, radius: 10, fillKey: 'unGuessed'}
       ];
 
-      $scope.correctGuess = function(countryCode) {
-        $scope.mapData[countryCode] = {fillKey: 'guessed'};
-        //console.log($scope.choropleth.options.data);
-        //$scope.choropleth.resize();
-      };
+      $scope.userGuessValue = '';
+      $scope.$watch('userGuessValue', function() {
+        if ($scope.userGuessValue.length > 0) {
+          $scope.checkGuess();
+        }
+      });
 
+      $scope.checkGuess = function() {
+        //console.log('howdy');
+        var correctGuess = false;
+        if ($scope.userGuessValue === 'tunisia') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'TUN';
+        }
+
+
+        if (correctGuess) {
+          var updateObj = {};
+          updateObj[correctGuessCountryCode] = { fillKey: 'guessed' };
+
+          $scope.choropleth.updateChoropleth(updateObj);
+          $scope.userGuessValue = '';          
+        }
+      };
     }
 
 })();
