@@ -156,8 +156,100 @@
             $scope.userGuessValue === 'guinea bissau') {
           correctGuess = true;
           var correctGuessCountryCode = 'GNB';
+        } else if ($scope.userGuessValue === 'equatorial guinea') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'GNQ';
+        } else if ($scope.userGuessValue === 'kenya') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'KEN';
+        } else if ($scope.userGuessValue === 'liberia') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'LBR';
+        } else if ($scope.userGuessValue === 'libya') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'LBY';
+        } else if ($scope.userGuessValue === 'lesotho') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'LSO';
+        } else if ($scope.userGuessValue === 'morocco') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'MAR';
+        } else if ($scope.userGuessValue === 'madagascar') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'MDG';
+        } else if ($scope.userGuessValue === 'mali') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'MLI';
+        } else if ($scope.userGuessValue === 'mozambique') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'MOZ';
+        } else if ($scope.userGuessValue === 'mauritania') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'MRT';
+        } else if ($scope.userGuessValue === 'mauritius') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'MUS';
+        } else if ($scope.userGuessValue === 'malawi') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'MWI';
+        } else if ($scope.userGuessValue === 'namibia') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'NAM';
+        } else if ($scope.userGuessValue === 'niger') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'NER';
+        } else if ($scope.userGuessValue === 'nigeria') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'NGA';
+        } else if ($scope.userGuessValue === 'rwanda') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'RWA';
+        } else if ($scope.userGuessValue === 'sudan') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'SDN';
+        } else if ($scope.userGuessValue === 'senegal') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'SEN';
+        } else if ($scope.userGuessValue === 'sierra leone') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'SLE';
+        } else if ($scope.userGuessValue === 'somalia') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'SOM';
+        } else if ($scope.userGuessValue === 'south sudan') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'SSD';
+        } else if ($scope.userGuessValue === 'swaziland') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'SWZ';
+        } else if ($scope.userGuessValue === 'chad') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'TCD';
+        } else if ($scope.userGuessValue === 'togo') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'TGO';
+        } else if ($scope.userGuessValue === 'tunisia') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'TUN';
+        } else if ($scope.userGuessValue === 'tanzania') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'TZA';
+        } else if ($scope.userGuessValue === 'uganda') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'UGA';
+        } else if ($scope.userGuessValue === 'south africa') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'ZAF';
+        } else if ($scope.userGuessValue === 'zambia') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'ZMB';
+        } else if ($scope.userGuessValue === 'zimbabwe') {
+          correctGuess = true;
+          var correctGuessCountryCode = 'ZWE';
+        } else if ($scope.userGuessValue === 'somaliland') {
+          correctGuess = true;
+          var correctGuessCountryCode = '-99';
         }
-
 
         if (correctGuess && !_.find($scope.correctAnswers, function(country) { return country === correctGuessCountryCode })) {
             $scope.correctAnswers.push(correctGuessCountryCode);
