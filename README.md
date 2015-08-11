@@ -1,6 +1,6 @@
 ## African Nations Quiz
 
-How many of the 58 nations of Africa can you name in ten minutes?
+How many of the 57 nations of Africa can you name in ten minutes?
 
 #### a work in progress
 

@@ -244,9 +244,6 @@
         } else if (userGuessValueFixed === 'zimbabwe') {
           correctGuess = true;
           var correctGuessCountryCode = 'ZWE';
-        } else if (userGuessValueFixed === 'somaliland') {
-          correctGuess = true;
-          var correctGuessCountryCode = 'SLD';
         }
 
         if (correctGuess && !_.find($scope.correctAnswers, function(country) { return country === correctGuessCountryCode })) {
