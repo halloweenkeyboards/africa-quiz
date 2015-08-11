@@ -61,7 +61,7 @@
           'ZAF': { fillKey: 'unGuessed' },
           'ZMB': { fillKey: 'unGuessed' },
           'ZWE': { fillKey: 'unGuessed' },
-          '-99': { fillKey: 'unGuessed' }          
+          'SLD': { fillKey: 'unGuessed' }          
         };
       $scope.islandNations = [  
           {name: 'seychelles', latitude: -4.37 , longitude: 55.27, radius: 10, fillKey: 'unGuessed'},
@@ -246,7 +246,7 @@
           var correctGuessCountryCode = 'ZWE';
         } else if (userGuessValueFixed === 'somaliland') {
           correctGuess = true;
-          var correctGuessCountryCode = '-99';
+          var correctGuessCountryCode = 'SLD';
         }
 
         if (correctGuess && !_.find($scope.correctAnswers, function(country) { return country === correctGuessCountryCode })) {
