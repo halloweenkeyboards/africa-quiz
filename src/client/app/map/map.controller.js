@@ -83,6 +83,9 @@
         //console.log('howdy');
         var userGuessValueFixed = $scope.userGuessValue.toLowerCase();
         var correctGuess = false;
+        var correctGuessIsland = false;
+
+        //continental nations
         if (userGuessValueFixed === 'angola') {
           correctGuess = true;
           var correctGuessCountryCode = 'AGO';
@@ -244,6 +247,24 @@
         } else if (userGuessValueFixed === 'zimbabwe') {
           correctGuess = true;
           var correctGuessCountryCode = 'ZWE';
+        }
+
+        // island nations
+        if (userGuessValueFixed === 'seychelles') {
+          correctGuessIsland = true;
+          $scope.islandNations[0].fillKey = 'guessed';
+        } else if (userGuessValueFixed === 'mauritius') {
+          correctGuessIsland = true;
+          $scope.islandNations[1].fillKey = 'guessed';
+        } else if (userGuessValueFixed === 'sao tome and principe') {
+          correctGuessIsland = true;
+          $scope.islandNations[2].fillKey = 'guessed';
+        } else if (userGuessValueFixed === 'cape verde') {
+          correctGuessIsland = true;
+          $scope.islandNations[3].fillKey = 'guessed';
+        } else if (userGuessValueFixed === 'comoros') {
+          correctGuessIsland = true;
+          $scope.islandNations[4].fillKey = 'guessed';
         }
 
         if (correctGuess && !_.find($scope.correctAnswers, function(country) { return country === correctGuessCountryCode })) {
