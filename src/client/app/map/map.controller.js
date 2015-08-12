@@ -252,19 +252,19 @@
         // island nations
         if (userGuessValueFixed === 'seychelles') {
           correctGuessIsland = true;
-          $scope.islandNations[0].fillKey = 'guessed';
+          $('circle#seychelles').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
         } else if (userGuessValueFixed === 'mauritius') {
           correctGuessIsland = true;
-          $scope.islandNations[1].fillKey = 'guessed';
+          $('circle#mauritius').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
         } else if (userGuessValueFixed === 'sao tome and principe') {
           correctGuessIsland = true;
-          $scope.islandNations[2].fillKey = 'guessed';
+          $('circle#sao-tome-and-principe').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
         } else if (userGuessValueFixed === 'cape verde') {
           correctGuessIsland = true;
-          $scope.islandNations[3].fillKey = 'guessed';
+          $('circle#cape-verde').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
         } else if (userGuessValueFixed === 'comoros') {
           correctGuessIsland = true;
-          $scope.islandNations[4].fillKey = 'guessed';
+          $('circle#comoros').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
         }
 
         if (correctGuess && !_.find($scope.correctAnswers, function(country) { return country === correctGuessCountryCode })) {
