@@ -276,6 +276,12 @@
             $scope.choropleth.updateChoropleth(updateObj);
             $scope.userGuessValue = '';
         }
+
+        if (correctGuessIsland) {
+            console.log('got an island');
+
+            $scope.userGuessValue = '';
+        }
       };
     }
 
