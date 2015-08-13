@@ -64,11 +64,11 @@
           'SLD': { fillKey: 'unGuessed' }          
         };
       $scope.islandNations = [  
-          {name: 'seychelles', latitude: -4.37 , longitude: 55.27, radius: 10, fillKey: 'unGuessed'},
-          {name: 'mauritius', latitude: -20.16 , longitude: 57.52, radius: 10, fillKey: 'unGuessed'},
-          {name: 'sao tome and principe', latitude: 0.33 , longitude: 6.73, radius: 10, fillKey: 'unGuessed'},
-          {name: 'cape verde', latitude: 14.91, longitude: -23.5, radius: 10, fillKey: 'unGuessed'},
-          {name: 'comoros', latitude: -11.68 , longitude: 43.26, radius: 10, fillKey: 'unGuessed'}
+          {name: 'seychelles', latitude: -4.37 , longitude: 55.27, radius: 10, id: 'SYC', fillKey: 'unGuessed'},
+          {name: 'mauritius', latitude: -20.16 , longitude: 57.52, radius: 10, id: 'MUS', fillKey: 'unGuessed'},
+          {name: 'sao tome and principe', latitude: 0.33 , longitude: 6.73, id: 'STP', radius: 10, fillKey: 'unGuessed'},
+          {name: 'cape verde', latitude: 14.91, longitude: -23.5, radius: 10, id: 'CPV', fillKey: 'unGuessed'},
+          {name: 'comoros', latitude: -11.68 , longitude: 43.26, radius: 10, id: 'COM', fillKey: 'unGuessed'}
       ];
 
       $scope.userGuessValue = '';
@@ -252,19 +252,19 @@
         // island nations
         if (userGuessValueFixed === 'seychelles') {
           correctGuessIsland = true;
-          $('circle#seychelles').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
+          $('circle#SYC').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
         } else if (userGuessValueFixed === 'mauritius') {
           correctGuessIsland = true;
-          $('circle#mauritius').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
+          $('circle#MUS').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
         } else if (userGuessValueFixed === 'sao tome and principe') {
           correctGuessIsland = true;
-          $('circle#sao-tome-and-principe').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
+          $('circle#STP').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
         } else if (userGuessValueFixed === 'cape verde') {
           correctGuessIsland = true;
-          $('circle#cape-verde').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
+          $('circle#CPV').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
         } else if (userGuessValueFixed === 'comoros') {
           correctGuessIsland = true;
-          $('circle#comoros').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
+          $('circle#COM').attr('style', 'stroke: rgb(255, 255, 255); stroke-width: 2px; fill-opacity: 0.75; fill: rgb(204, 42, 65);');
         }
 
         if (correctGuess && !_.find($scope.correctAnswers, function(country) { return country === correctGuessCountryCode })) {
