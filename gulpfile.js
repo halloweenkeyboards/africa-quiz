@@ -11,6 +11,23 @@ var port = process.env.PORT || config.defaultPort;
 gulp.task('help', $.taskListing);
 gulp.task('default', ['help']);
 
+gulp.task('clean-images', function(done) {
+    clean(config.build + 'images/**/*.*', done);
+});
+
+gulp.task('clean-styles', function(done) {
+    clean(config.temp + '**/*.css', done);
+});
+
+gulp.task('clean-code', function(done) {
+    var files = [].concat(
+        config.temp + '**/*.js',
+        config.build + '**/*.html',
+        config.build + 'js/**/*.js'
+    );
+    clean(files, done);
+});
+
 gulp.task('wiredep', function() {
     var options = config.getWiredepOptions();
     var wiredep = require('wiredep').stream;
