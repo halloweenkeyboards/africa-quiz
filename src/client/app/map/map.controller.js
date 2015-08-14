@@ -8,6 +8,315 @@
     Map.$inject = ['$scope'];
 
     function Map($scope) {
+      var nations = [
+        {
+          isoId: 'AGO',
+          spellings: [
+            'angola'
+          ]
+        }, 
+        {
+          isoId: 'BDI',
+          spellings: [
+            'burundi'
+          ]
+        }, 
+        {
+          isoId: 'BEN',
+          spellings: [
+            'benin'
+          ]
+        }, 
+        {
+          isoId: 'BFA',
+          spellings: [
+            'burkina faso'
+          ]
+        }, 
+        {
+          isoId: 'BWA',
+          spellings: [
+            'botswana'
+          ]
+        }, 
+        {
+          isoId: 'CAF',
+          spellings: [
+            'central african republic'
+          ]
+        }, 
+        {
+          isoId: 'CIV',
+          spellings: [
+            'ivory coast',
+            "cote d'ivoire"
+          ]
+        }, 
+        {
+          isoId: 'CMR',
+          spellings: [
+            'cameroon'
+          ]
+        }, 
+        {
+          isoId: 'COD',
+          spellings: [
+            'democratic republic of congo',
+            'democratic republic of the congo',
+            'the democratic republic of congo',
+            'the democratic republic of the congo',
+          ]
+        }, 
+        {
+          isoId: 'COG',
+          spellings: [
+            'congo'
+          ]
+        }, 
+        {
+          isoId: 'DJI',
+          spellings: [
+            'djibouti'
+          ]
+        }, 
+        {
+          isoId: 'DZA',
+          spellings: [
+            'algeria'
+          ]
+        }, 
+        {
+          isoId: 'EGY',
+          spellings: [
+            'egypt'
+          ]
+        }, 
+        {
+          isoId: 'ERI',
+          spellings: [
+            'eritrea'
+          ]
+        }, 
+        {
+          isoId: 'ESH',
+          spellings: [
+            'western sahara'
+          ]
+        }, 
+        {
+          isoId: 'ETH',
+          spellings: [
+            'ethiopia'
+          ]
+        }, 
+        {
+          isoId: 'GAB',
+          spellings: [
+            'gabon'
+          ]
+        }, 
+        {
+          isoId: 'GHA',
+          spellings: [
+            'ghana'
+          ]
+        }, 
+        {
+          isoId: 'GIN',
+          spellings: [
+            'guinea'
+          ]
+        }, 
+        {
+          isoId: 'GMB',
+          spellings: [
+            'the gambia',
+            'gambia'
+          ]
+        }, 
+        {
+          isoId: 'GNB',
+          spellings: [
+            'guinea-bissau',
+            'guinea bissau'
+          ]
+        }, 
+        {
+          isoId: 'GNQ',
+          spellings: [
+            'equatorial guinea'
+          ]
+        }, 
+        {
+          isoId: 'KEN',
+          spellings: [
+            'kenya'
+          ]
+        }, 
+        {
+          isoId: 'LBR',
+          spellings: [
+            'liberia'
+          ]
+        }, 
+        {
+          isoId: 'LBY',
+          spellings: [
+            'libya'
+          ]
+        }, 
+        {
+          isoId: 'LSO',
+          spellings: [
+            'lesotho'
+          ]
+        }, 
+        {
+          isoId: 'MAR',
+          spellings: [
+            'morocco'
+          ]
+        }, 
+        {
+          isoId: 'MDG',
+          spellings: [
+            'madagascar'
+          ]
+        }, 
+        {
+          isoId: 'MLI',
+          spellings: [
+            'mali'
+          ]
+        }, 
+        {
+          isoId: 'MOZ',
+          spellings: [
+            'mozambique'
+          ]
+        }, 
+        {
+          isoId: 'MRT',
+          spellings: [
+            'mauritania'
+          ]
+        }, 
+        {
+          isoId: 'MWI',
+          spellings: [
+            'malawi'
+          ]
+        }, 
+        {
+          isoId: 'NAM',
+          spellings: [
+            'namibia'
+          ]
+        }, 
+        {
+          isoId: 'NER',
+          spellings: [
+            'niger'
+          ]
+        }, 
+        {
+          isoId: 'NGA',
+          spellings: [
+            'nigeria'
+          ]
+        }, 
+        {
+          isoId: 'RWA',
+          spellings: [
+            'rwanda'
+          ]
+        }, 
+        {
+          isoId: 'SDN',
+          spellings: [
+            'sudan'
+          ]
+        }, 
+        {
+          isoId: 'SEN',
+          spellings: [
+            'senegal'
+          ]
+        }, 
+        {
+          isoId: 'SLE',
+          spellings: [
+            'sierra leone'
+          ]
+        }, 
+        {
+          isoId: 'SOM',
+          spellings: [
+            'somalia'
+          ]
+        }, 
+        {
+          isoId: 'SSD',
+          spellings: [
+            'south sudan'
+          ]
+        }, 
+        {
+          isoId: 'SWZ',
+          spellings: [
+            'swaziland'
+          ]
+        }, 
+        {
+          isoId: 'TCD',
+          spellings: [
+            'chad'
+          ]
+        }, 
+        {
+          isoId: 'TGO',
+          spellings: [
+            'togo'
+          ]
+        },
+        {
+          isoId: 'TUN',
+          spellings: [
+            'tunisia'
+          ]
+        }, 
+        {
+          isoId: 'TZA',
+          spellings: [
+            'tanzania'
+          ]
+        }, 
+        {
+          isoId: 'UGA',
+          spellings: [
+            'uganda'
+          ]
+        }, 
+        {
+          isoId: 'ZAF',
+          spellings: [
+            'south africa'
+          ]
+        }, 
+        {
+          isoId: 'ZMB',
+          spellings: [
+            'zambia'
+          ]
+        }, 
+        {
+          isoId: 'ZWE',
+          spellings: [
+            'zimbabwe'
+          ]
+        }
+      ];
+
       $scope.mapData = {
           'AGO': { fillKey: 'unGuessed' },
           'BDI': { fillKey: 'unGuessed' },
