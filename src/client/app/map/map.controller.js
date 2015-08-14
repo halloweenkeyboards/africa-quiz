@@ -61,8 +61,8 @@
         {
           isoId: 'COD',
           spellings: [
-            'democratic republic of congo',
             'democratic republic of the congo',
+            'democratic republic of congo',
             'the democratic republic of congo',
             'the democratic republic of the congo',
           ]
