@@ -32,12 +32,12 @@
           
             return {path: path, projection: projection};
           },
-        fills: {
-          defaultFill: "#424254",
-          unGuessed: '#64908a',
-          guessed: '#cc2a41'
-        },
-        data: scope.mapData
+          fills: {
+            defaultFill: "#424254",
+            unGuessed: '#64908a',
+            guessed: '#cc2a41'
+          },
+          data: scope.mapData
       });
       scope.choropleth.bubbles(scope.islandNations, {
           highlightOnHover: false,
