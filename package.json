@@ -7,11 +7,11 @@
     "url": "https://github.com/halloweenkeyboards/africa-quiz.git"
   },
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node" : "0.12.x"
+  },
   "dependencies": {
     "express": "^4.13.2"
   },
