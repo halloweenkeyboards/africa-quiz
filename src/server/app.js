@@ -2,12 +2,12 @@
 
 var express = require('express');
 var app = express();
-var logger = require('morgan');
+//var logger = require('morgan');
 var port = process.env.PORT || 7575;
 
 var environment = process.env.NODE_ENV;
 
-app.use(logger('dev'));
+//app.use(logger('dev'));
 
 console.log('About to crank up node');
 console.log('PORT=' + port);
