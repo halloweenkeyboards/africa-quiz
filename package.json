@@ -12,6 +12,9 @@
   "engines": {
     "node" : "0.12.x"
   },
+  "scripts": {
+    "start" : "node src/server/app.js"
+  },
   "dependencies": {
     "express": "^4.13.2"
   },
